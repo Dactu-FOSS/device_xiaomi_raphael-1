@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //
 // Copyright (C) 2019-2021 The LineageOS Project
 //
@@ -23,4 +24,17 @@ cc_library_static {
         "system/libbase/include"
     ],
     shared_libs: ["libbase"],
+=======
+prebuilt_etc {
+    name: "init.qcom.usb.rc",
+    src: "init.qcom.usb.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+}
+
+sh_binary {
+    name: "init.qcom.usb.sh",
+    src: "init.qcom.usb.sh",
+    vendor: true,
+>>>>>>> 22897c8b (raphael:  convert rootdir to init)
 }
